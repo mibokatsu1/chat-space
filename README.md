@@ -23,6 +23,7 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+- belongs_to :post
 
 ## userテーブル
 
@@ -35,6 +36,8 @@ Things you may want to cover:
 ### Association
 - has_many :groups_users
 - has_many :group, through: :groups_users
+- has_many :post,  through: :groups_users
+
 
 ## groupテーブル
 
@@ -46,6 +49,21 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
+- has_many :groups_users
+- has_many :user, through: :groups_users
+- belongs_to :post
+
+## postテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|image|text||
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
 - has_many :groups_users
 - has_many :user, through: :groups_users
 
