@@ -24,7 +24,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
-## usersテーブル
+## userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -35,6 +35,19 @@ Things you may want to cover:
 ### Association
 - has_many :groups_users
 - has_many :group, through: :groups_users
+
+## groupテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|group_name|text|null: false|
+|add_user_id|text||
+|member|text||
+|user_id|integer|null: false, foreign_key: true|
+
+### Association
+- has_many :groups_users
+- has_many :user, through: :groups_users
 
 * Database initialization
 
