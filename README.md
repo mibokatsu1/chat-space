@@ -42,7 +42,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|text|null: false|
+|name|string|null: false|
 |add_user_id|integer||
 |member|text||
 |user_id|integer|null: false, foreign_key: true|
