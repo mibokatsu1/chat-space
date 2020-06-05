@@ -7,15 +7,43 @@
   display: flex;
 }
 
-.side-bar {
+.Side-bar {
   width: 300px;
-  
-  &__user-name {
+  background-color: #253141;
+  &__header {
     height: 100px;
     background-color: #253141;
+    display: flex;
+    align-items: center;
+    .side-box {
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      background-color: #253141;
+      font-weight: bold;
+      &__user-name {
+        color: #ffffff;
+        font-size: 16px;
+      }
+      &__icons {
+        // width: 60px;
+        display: flex;
+        // justify-content: space-around;
+        list-style: none;
+        .fas {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        .side-box__icon--edit {
+          margin-right: 5px;
+        }
+      }
+    }
   }
   &__group-list {
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     background-color: #2f3e51;
   }
 }
