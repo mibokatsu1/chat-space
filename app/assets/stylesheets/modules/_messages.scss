@@ -9,7 +9,15 @@
 
 .side-bar {
   width: 300px;
-  background-color: #253141;
+  
+  &__user-name {
+    height: 100px;
+    background-color: #253141;
+  }
+  &__group-list {
+    height: 100%;
+    background-color: #2f3e51;
+  }
 }
 
 .main-chat {
