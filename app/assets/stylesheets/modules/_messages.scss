@@ -88,6 +88,33 @@
     height: 100px;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    .group-info__top-contents {
+      .group-info__group-name {
+        margin: 35px 0 15px 40px;
+        font-size: 20px;
+        color: #333333;
+      }
+      .group-info__member-name {
+        margin-left: 40px;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+    .group-info__bottom-contens {
+      display: flex;
+      align-items: center;
+      // margin-right: 40px;
+      margin: 28px 40px 28px 0;
+      padding: 0 20px;
+      border: 1px solid #38aef0;
+      .group-info__edit-btn {
+        font-size: 16px;
+        color: #38aef0;
+        text-decoration: none;
+      }
+    }
   }
   &__message-list {
     height: calc(100% - 190px);

@@ -1,6 +1,13 @@
 .Chat-main
   .Chat-main__group-info
-    <チャットメイン画面>
+    .group-info__top-contents
+      .group-info__group-name
+        グループ名
+      .group-info__member-name
+        Member : メンバー名
+    .group-info__bottom-contens
+      =link_to("#", class: "group-info__edit-btn") do
+        Edit
   .Chat-main__message-list
     <チャットメインメッセージリスト>
   .Chat-main__message-form
