@@ -84,9 +84,11 @@
 
 .Chat-main {
   width: 100vw;
+  background-color: pink;
   &__group-info {
     height: 100px;
-    background-color: #ffffff;
+    background-color: yellow;
+    // background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
@@ -118,91 +120,116 @@
     }
   }
   &__message-list {
-    height: calc(100% - 190px);
+    height: calc(100vh - 190px);
+    padding: 35px 40px 0;
     background-color: #fafafa;
     .message-user-1 {
       display: flex;
-      margin-top: 35px;
+      margin-bottom: 12px;
       &__name {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
-        margin-left: 40px;
+        margin-right: 10px;
       }
       &__date {
         color: #999999;
         font-size: 12px;
-        margin-left: 10px;
       }
     }
     .message-1 {
       font-size: 14px;
       color: #434a54;
-      margin: 12px 0 46px 40px;
+      margin-bottom: 46px;
     }
     .message-user-2 {
       display: flex;
-      margin-top: 35px;
+      margin-bottom: 12px;
       &__name {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
-        margin-left: 40px;
+        margin-right: 10px;
       }
       &__date {
         color: #999999;
         font-size: 12px;
-        margin-left: 10px;
       }
     }
     .message-2 {
       font-size: 14px;
       color: #434a54;
-      margin: 12px 0 46px 40px;
+      margin-bottom: 46px;
     }
     .message-user-3 {
       display: flex;
-      margin-top: 35px;
+      margin-bottom: 12px;
       &__name {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
-        margin-left: 40px;
+        margin-right: 10px;
       }
       &__date {
         color: #999999;
         font-size: 12px;
-        margin-left: 10px;
       }
     }
     .message-3 {
       font-size: 14px;
       color: #434a54;
-      margin: 12px 0 46px 40px;
+      margin-bottom: 46px;
     }
     .message-user-4 {
       display: flex;
-      margin-top: 35px;
+      margin-bottom: 12px;
       &__name {
         color: #333333;
         font-size: 16px;
         font-weight: bold;
-        margin-left: 40px;
+        margin-right: 10px;
       }
       &__date {
         color: #999999;
         font-size: 12px;
-        margin-left: 10px;
       }
     }
     .message-4 {
       font-size: 14px;
       color: #434a54;
-      margin: 12px 0 46px 40px;
+      margin-bottom: 46px;
     }
   }
   &__message-form {
     height: 90px;
     background-color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    .message-form__box {
+      display: flex;
+      width: 100%;
+      margin-left: 40px;
+      padding: 10px 10px;
+      border: none;
+      background-color: #fafafa;
+      .message-form__text {
+        width: 100%;
+        border-style: none;
+        background-color: red;
+      }
+      .input-box__image {
+        display: flex;
+        align-items: center;
+        background-color: yellow;
+      }
+    }
+    .message-form__send-btn {
+      margin: 0 40px 0 10px;
+      padding: 10px 20px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: #38aef0;
+    }
   }
 }
