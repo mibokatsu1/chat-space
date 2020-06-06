@@ -42,41 +42,40 @@
   }
   &__group-list {
     height: calc(100% - 100px);
+    padding: 20px 20px 0;
     background-color: #2f3e51;
     color: #ffffff;
     // font-weight: bold;
     .Side-bar__group-name-1 {
-      // margin: 0px 20px 5px 20px;
-      padding: 20px 20px 5px 20px;
+      margin-bottom: 5px;
       font-size: 15px;
     }
     .Side-bar__message-1 {
-      // margin: 0 20px 20px 20px;
-      padding:  0 20px 20px 20px;
+      margin-bottom: 40px;
       font-size: 11px;
     }
     .Side-bar__group-name-2 {
-      padding: 20px 20px 5px 20px;
+      margin-bottom: 5px;
       font-size: 15px;
     }
     .Side-bar__message-2 {
-      padding:  0 20px 20px 20px;
+      margin-bottom: 40px;
       font-size: 11px;
     }
     .Side-bar__group-name-3 {
-      padding: 20px 20px 5px 20px;
+      margin-bottom: 5px;
       font-size: 15px;
     }
     .Side-bar__message-3 {
-      padding:  0 20px 20px 20px;
+      margin-bottom: 40px;
       font-size: 11px;
     }
     .Side-bar__group-name-4 {
-      padding: 20px 20px 5px 20px;
+      margin-bottom: 5px;
       font-size: 15px;
     }
     .Side-bar__message-4 {
-      padding:  0 20px 20px 20px;
+      margin-bottom: 40px;
       font-size: 11px;
     }
   }
