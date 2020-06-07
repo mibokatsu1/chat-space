@@ -28,11 +28,10 @@
       &__icons {
         // width: 60px;
         display: flex;
-        // justify-content: space-around;
         list-style: none;
-        .fas {
+        .side-box__icon {
           color: #ffffff;
-          text-decoration: none;
+          // text-decoration: none;
         }
         .side-box__icon--edit {
           margin-right: 5px;
@@ -200,7 +199,7 @@
   &__message-form {
     height: 90px;
     padding: 20px 50px 20px 40px;
-    background-color: #d2d2d2;
+    background-color: #dddddd;
     .message-form__box {
       display: flex;
       align-items: center;  
@@ -212,7 +211,7 @@
         height: 50px;
         padding: 10px 10px;
         border: none;
-        background-color: #fafafa;
+        background-color: #fff;
         .message-form__text {
           width: 100%;
           border-style: none;

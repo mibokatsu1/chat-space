@@ -5,13 +5,11 @@
         ユーザー名
       %ul.side-box__icons
         %li.side-box__icon--edit
-          -# =link_to "#", class: "side-box__icon side-box__icon--edit" do
-          =link_to "#" do
-            = icon('fas fa-edit', class: "side-box__icon side-box__icon--edit")
+          =link_to "#", class: "link__create__new--group" do
+            = icon('fas', 'edit', class: "side-box__icon create__new--group__icon")
         %li.side-box__icon--config
-          -# =link_to "#"  class: "side-box__icon side-box__icon--config" do
-          =link_to "#" do
-            = icon('fas fa-cog', class: "side-box__icon side-box__icon--config")
+          =link_to "#", class: "link__user--config" do
+            = icon('fas', 'cog', class: "side-box__icon user--config__icon")
   .Side-bar__group-list
     .Side-bar__group-name-1
       グループ名-1
