@@ -199,34 +199,43 @@
   }
   &__message-form {
     height: 90px;
+    padding: 20px 50px 20px 40px;
     background-color: #d2d2d2;
-    display: flex;
-    align-items: center;
     .message-form__box {
       display: flex;
-      width: 100%;
-      margin-left: 40px;
-      padding: 10px 10px;
-      border: none;
-      background-color: #fafafa;
-      .message-form__text {
-        width: 100%;
-        border-style: none;
-        background-color: red;
-      }
-      .input-box__image {
+      align-items: center;  
+      .input__contents {
         display: flex;
         align-items: center;
-        background-color: yellow;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        padding: 10px 10px;
+        border: none;
+        background-color: #fafafa;
+        .message-form__text {
+          width: 100%;
+          border-style: none;
+        }
+        .input-box__image {
+          position: absolute;
+          right: 10px;
+          .input-box__icon {
+            font-size: 25px;
+          }
+          .input-box__file {
+            display: none;
+          }
+        }
       }
-    }
-    .message-form__send-btn {
-      margin: 0 40px 0 10px;
-      padding: 10px 20px;
-      border: 1px solid blue;
-      border-radius: 5px;
-      color: #ffffff;
-      background-color: #38aef0;
+      .message-form__send-btn {
+        height: 50px;
+        margin-left: 15px;
+        padding: 0px 30px;
+        border: none;
+        color: #ffffff;
+        background-color: #38aef0;
+      }
     }
   }
 }

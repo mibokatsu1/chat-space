@@ -37,10 +37,11 @@
         2020/06/01(Wed) 10:00
     .message-4
       おはよう！
-  %form.Chat-main__message-form
-    .message-form__box
-      %input.message-form__text{"placeholder": "type a message", type: "text"}
-      %label{class: "input-box__image"}
-        = icon('far fa-image fa-lg', 'input-box__icon')
-        %input.input-box__file{type: "file", style: "display:none"}
-    %input.message-form__send-btn{name: "commit", type: "submit", value: "Send"}
+  .Chat-main__message-form
+    %form.message-form__box
+      .input__contents
+        %input.message-form__text{"placeholder": "type a message", type: "text"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image', class: "input-box__icon")
+          %input.input-box__file{type: "file"}
+      %input.message-form__send-btn{name: "commit", type: "submit", value: "Send"}
