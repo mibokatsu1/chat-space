@@ -83,35 +83,33 @@
 
 .Chat-main {
   width: 100vw;
-  background-color: pink;
   &__group-info {
     height: 100px;
-    background-color: yellow;
-    // background-color: #ffffff;
+    background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
     .group-info__top-contents {
+      padding: 35px 0 0 40px;
       .group-info__group-name {
-        margin: 35px 0 15px 40px;
+        margin-bottom: 15px;
         font-size: 20px;
         color: #333333;
       }
       .group-info__member-name {
-        margin-left: 40px;
         font-size: 12px;
         color: #999999;
       }
     }
-    .group-info__bottom-contens {
-      width: 72px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      margin: 28px 40px 28px 0;
-      padding: 0 20px;
-      border: 1px solid #38aef0;
+    .group-info__bottom-contents {
       .group-info__edit-btn {
+        width: 72px;
+        height: 40px;
+        margin: 28px 40px 0 0;
+        padding: 0 20px;
+        border: 1px solid #38aef0;
+        display: flex;
+        align-items: center;
         font-size: 16px;
         color: #38aef0;
         text-decoration: none;
