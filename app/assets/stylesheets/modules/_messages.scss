@@ -12,6 +12,28 @@
   font-size: 11px;
 }
 
+.Chat-main__body__message-user {
+  display: flex;
+  margin-bottom: 12px;
+  &__name {
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  &__date {
+    color: #999999;
+    font-size: 12px;
+  }
+}
+
+.Chat-main__body__message {
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 46px;
+}
+
+
 .wrapper {
   height: 100vh;
   display: flex;
@@ -121,81 +143,29 @@
     height: calc(100vh - 190px);
     padding: 35px 40px 0;
     background-color: #fafafa;
-    &__message-user-1 {
-      display: flex;
-      margin-bottom: 12px;
-      &__name {
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      &__date {
-        color: #999999;
-        font-size: 12px;
-      }
+    &__message-user {
+      @extend.Chat-main__body__message-user;
     }
-    &__message-1 {
-      font-size: 14px;
-      color: #434a54;
-      margin-bottom: 46px;
+    &__message {
+      @extend.Chat-main__body__message;
     }
-    &__message-user-2 {
-      display: flex;
-      margin-bottom: 12px;
-      &__name {
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      &__date {
-        color: #999999;
-        font-size: 12px;
-      }
+    &__message-user {
+      @extend.Chat-main__body__message-user;
     }
-    &__message-2 {
-      font-size: 14px;
-      color: #434a54;
-      margin-bottom: 46px;
+    &__message {
+      @extend.Chat-main__body__message;
     }
-    &__message-user-3 {
-      display: flex;
-      margin-bottom: 12px;
-      &__name {
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      &__date {
-        color: #999999;
-        font-size: 12px;
-      }
+    &__message-user {
+      @extend.Chat-main__body__message-user;
     }
-    &__message-3 {
-      font-size: 14px;
-      color: #434a54;
-      margin-bottom: 46px;
+    &__message {
+      @extend.Chat-main__body__message;
     }
-    &__message-user-4 {
-      display: flex;
-      margin-bottom: 12px;
-      &__name {
-        color: #333333;
-        font-size: 16px;
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      &__date {
-        color: #999999;
-        font-size: 12px;
-      }
+    &__message-user {
+      @extend.Chat-main__body__message-user;
     }
-    &__message-4 {
-      font-size: 14px;
-      color: #434a54;
-      margin-bottom: 46px;
+    &__message {
+      @extend.Chat-main__body__message;
     }
   }
   &__footer {
