@@ -2,13 +2,13 @@
   .Side-bar__header
     .Side-bar__header__side-box
       .Side-bar__header__side-box__user-name
-        ユーザー名
+        = current_user.name
       %ul.Side-bar__header__side-box__icon
         %li.Side-bar__header__side-box__icon--edit
           =link_to "#", class: "link__create__new--group" do
             = icon('fas', 'edit', class: "side-box__icon create__new--group__icon")
         %li.Side-bar__header__side-box__icon--config
-          =link_to "#", class: "link__user--config" do
+          =link_to edit_user_path(current_user), class: "link__user--config" do
             = icon('fas', 'cog', class: "side-box__icon user--config__icon")
   .Side-bar__body
     .Side-bar__body__group-name-1
