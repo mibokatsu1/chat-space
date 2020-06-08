@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     background-color: #253141;
-    .side-box {
+    &__side-box {
       height: 20px;
       width: 260px;
       margin: 0 20px;
@@ -25,7 +25,7 @@
         font-size: 16px;
         font-weight: bold;
       }
-      &__icons {
+      &__icon {
         // width: 60px;
         display: flex;
         list-style: none;
@@ -33,47 +33,47 @@
           color: #ffffff;
           // text-decoration: none;
         }
-        .side-box__icon--edit {
+        &--edit {
           margin-right: 5px;
         }
       }
     }
   }
-  &__group-list {
+  &__body {
     height: calc(100% - 100px);
     padding: 20px 20px 0;
     background-color: #2f3e51;
     color: #ffffff;
     // font-weight: bold;
-    .Side-bar__group-name-1 {
+    &__group-name-1 {
       margin-bottom: 5px;
       font-size: 15px;
     }
-    .Side-bar__message-1 {
+    &__message-1 {
       margin-bottom: 40px;
       font-size: 11px;
     }
-    .Side-bar__group-name-2 {
+    &__group-name-2 {
       margin-bottom: 5px;
       font-size: 15px;
     }
-    .Side-bar__message-2 {
+    &__message-2 {
       margin-bottom: 40px;
       font-size: 11px;
     }
-    .Side-bar__group-name-3 {
+    &__group-name-3 {
       margin-bottom: 5px;
       font-size: 15px;
     }
-    .Side-bar__message-3 {
+    &__message-3 {
       margin-bottom: 40px;
       font-size: 11px;
     }
-    .Side-bar__group-name-4 {
+    &__group-name-4 {
       margin-bottom: 5px;
       font-size: 15px;
     }
-    .Side-bar__message-4 {
+    &__message-4 {
       margin-bottom: 40px;
       font-size: 11px;
     }
@@ -82,25 +82,25 @@
 
 .Chat-main {
   width: 100vw;
-  &__group-info {
+  &__header {
     height: 100px;
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
     display: flex;
     justify-content: space-between;
-    .group-info__top-contents {
+    &__top-contents {
       padding: 35px 0 0 40px;
-      .group-info__group-name {
+      &__group-name {
         margin-bottom: 15px;
         font-size: 20px;
         color: #333333;
       }
-      .group-info__member-name {
+      &__member-name {
         font-size: 12px;
         color: #999999;
       }
     }
-    .group-info__bottom-contents {
+    &__bottom-contents {
       .group-info__edit-btn {
         width: 72px;
         height: 40px;
@@ -115,11 +115,11 @@
       }
     }
   }
-  &__message-list {
+  &__body {
     height: calc(100vh - 190px);
     padding: 35px 40px 0;
     background-color: #fafafa;
-    .message-user-1 {
+    &__message-user-1 {
       display: flex;
       margin-bottom: 12px;
       &__name {
@@ -133,12 +133,12 @@
         font-size: 12px;
       }
     }
-    .message-1 {
+    &__message-1 {
       font-size: 14px;
       color: #434a54;
       margin-bottom: 46px;
     }
-    .message-user-2 {
+    &__message-user-2 {
       display: flex;
       margin-bottom: 12px;
       &__name {
@@ -152,12 +152,12 @@
         font-size: 12px;
       }
     }
-    .message-2 {
+    &__message-2 {
       font-size: 14px;
       color: #434a54;
       margin-bottom: 46px;
     }
-    .message-user-3 {
+    &__message-user-3 {
       display: flex;
       margin-bottom: 12px;
       &__name {
@@ -171,12 +171,12 @@
         font-size: 12px;
       }
     }
-    .message-3 {
+    &__message-3 {
       font-size: 14px;
       color: #434a54;
       margin-bottom: 46px;
     }
-    .message-user-4 {
+    &__message-user-4 {
       display: flex;
       margin-bottom: 12px;
       &__name {
@@ -190,20 +190,20 @@
         font-size: 12px;
       }
     }
-    .message-4 {
+    &__message-4 {
       font-size: 14px;
       color: #434a54;
       margin-bottom: 46px;
     }
   }
-  &__message-form {
+  &__footer {
     height: 90px;
     padding: 20px 50px 20px 40px;
     background-color: #dddddd;
-    .message-form__box {
+    &__form {
       display: flex;
       align-items: center;  
-      .input__contents {
+      &__input {
         display: flex;
         align-items: center;
         position: relative;
@@ -212,7 +212,7 @@
         padding: 10px 10px;
         border: none;
         background-color: #fff;
-        .message-form__text {
+        &__text {
           width: 100%;
           border-style: none;
         }
@@ -227,7 +227,7 @@
           }
         }
       }
-      .message-form__send-btn {
+      &__send-btn {
         height: 50px;
         margin-left: 15px;
         padding: 0px 30px;
