@@ -1,0 +1,47 @@
+.Chat-main
+  .Chat-main__header
+    .Chat-main__header__top-contents
+      .Chat-main__header__top-contents__group-name
+        グループ名
+      .Chat-main__header__top-contents__member-name
+        Member : メンバー名
+    .Chat-main__header__bottom-contents
+      =link_to("#", class: "group-info__edit-btn") do
+        Edit
+  .Chat-main__body
+    .Chat-main__body__message-user
+      .Chat-main__body__message-user__name
+        ユーザー1
+      .Chat-main__body__message-user__date
+        2020/06/01(Wed) 10:00
+    .Chat-main__body__message
+      おはよう！
+    .Chat-main__body__message-user
+      .Chat-main__body__message-user__name
+        ユーザー2
+      .Chat-main__body__message-user__date
+        2020/06/01(Wed) 10:00
+    .Chat-main__body__message
+      おはよう！
+    .Chat-main__body__message-user
+      .Chat-main__body__message-user__name
+        ユーザー3
+      .Chat-main__body__message-user__date
+        2020/06/01(Wed) 10:00
+    .Chat-main__body__message
+      おはよう！
+    .Chat-main__body__message-user
+      .Chat-main__body__message-user__name
+        ユーザー4
+      .Chat-main__body__message-user__date
+        2020/06/01(Wed) 10:00
+    .Chat-main__body__message
+      おはよう！
+  .Chat-main__footer
+    %form.Chat-main__footer__form
+      .Chat-main__footer__form__input
+        %input.Chat-main__footer__form__input__text{"placeholder": "type a message", type: "text"}
+        %label{class: "input-box__image"}
+          = icon('far', 'image', class: "input-box__icon")
+          %input.input-box__file{type: "file"}
+      %input.Chat-main__footer__form__send-btn{name: "commit", type: "submit", value: "Send"}
