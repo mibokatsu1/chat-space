@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+.Side-bar__body__group-name {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.Side-bar__body__message {
+  margin-bottom: 40px;
+  font-size: 11px;
+}
+
 .wrapper {
   height: 100vh;
   display: flex;
@@ -46,36 +56,28 @@
     color: #ffffff;
     // font-weight: bold;
     &__group-name-1 {
-      margin-bottom: 5px;
-      font-size: 15px;
+      @extend.Side-bar__body__group-name
     }
     &__message-1 {
-      margin-bottom: 40px;
-      font-size: 11px;
+      @extend.Side-bar__body__message
     }
     &__group-name-2 {
-      margin-bottom: 5px;
-      font-size: 15px;
+      @extend.Side-bar__body__group-name
     }
     &__message-2 {
-      margin-bottom: 40px;
-      font-size: 11px;
+      @extend.Side-bar__body__message
     }
     &__group-name-3 {
-      margin-bottom: 5px;
-      font-size: 15px;
+      @extend.Side-bar__body__group-name
     }
     &__message-3 {
-      margin-bottom: 40px;
-      font-size: 11px;
+      @extend.Side-bar__body__message
     }
     &__group-name-4 {
-      margin-bottom: 5px;
-      font-size: 15px;
+      @extend.Side-bar__body__group-name
     }
     &__message-4 {
-      margin-bottom: 40px;
-      font-size: 11px;
+      @extend.Side-bar__body__message
     }
   }
 }
