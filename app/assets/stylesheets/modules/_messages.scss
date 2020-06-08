@@ -58,12 +58,10 @@
         font-weight: bold;
       }
       &__icon {
-        // width: 60px;
         display: flex;
         list-style: none;
         .side-box__icon {
           color: #ffffff;
-          // text-decoration: none;
         }
         &--edit {
           margin-right: 5px;
@@ -76,7 +74,6 @@
     padding: 20px 20px 0;
     background-color: #2f3e51;
     color: #ffffff;
-    // font-weight: bold;
     &__group-name-1 {
       @extend.Side-bar__body__group-name;
     }
