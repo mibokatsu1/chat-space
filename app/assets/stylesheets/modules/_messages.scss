@@ -78,28 +78,28 @@
     color: #ffffff;
     // font-weight: bold;
     &__group-name-1 {
-      @extend.Side-bar__body__group-name
+      @extend.Side-bar__body__group-name;
     }
     &__message-1 {
-      @extend.Side-bar__body__message
+      @extend.Side-bar__body__message;
     }
     &__group-name-2 {
-      @extend.Side-bar__body__group-name
+      @extend.Side-bar__body__group-name;
     }
     &__message-2 {
-      @extend.Side-bar__body__message
+      @extend.Side-bar__body__message;
     }
     &__group-name-3 {
-      @extend.Side-bar__body__group-name
+      @extend.Side-bar__body__group-name;
     }
     &__message-3 {
-      @extend.Side-bar__body__message
+      @extend.Side-bar__body__message;
     }
     &__group-name-4 {
-      @extend.Side-bar__body__group-name
+      @extend.Side-bar__body__group-name;
     }
     &__message-4 {
-      @extend.Side-bar__body__message
+      @extend.Side-bar__body__message;
     }
   }
 }
