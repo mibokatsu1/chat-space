@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
+.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .Side-bar__body__group-name {
   margin-bottom: 5px;
   font-size: 15px;
 }
 
-.Side-bar__body__message {
+.Side-bar__body__group-message {
   margin-bottom: 40px;
   font-size: 11px;
 }
@@ -70,33 +75,16 @@
     }
   }
   &__body {
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     padding: 20px 20px 0;
     background-color: #2f3e51;
-    color: #ffffff;
-    &__group-name-1 {
-      @extend.Side-bar__body__group-name;
-    }
-    &__message-1 {
-      @extend.Side-bar__body__message;
-    }
-    &__group-name-2 {
-      @extend.Side-bar__body__group-name;
-    }
-    &__message-2 {
-      @extend.Side-bar__body__message;
-    }
-    &__group-name-3 {
-      @extend.Side-bar__body__group-name;
-    }
-    &__message-3 {
-      @extend.Side-bar__body__message;
-    }
-    &__group-name-4 {
-      @extend.Side-bar__body__group-name;
-    }
-    &__message-4 {
-      @extend.Side-bar__body__message;
+    &__group {
+      &-name {
+        @extend.Side-bar__body__group-name;
+      }
+      &-message {
+        @extend.Side-bar__body__group-message;
+      }
     }
   }
 }
