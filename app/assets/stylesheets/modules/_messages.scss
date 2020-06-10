@@ -128,6 +128,8 @@
     height: calc(100vh - 190px);
     padding: 35px 40px 0;
     background-color: #fafafa;
+    box-sizing: border-box;
+    overflow: scroll;
     &__message-user {
       @extend.Chat-main__body__message-user;
     }
