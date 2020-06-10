@@ -2,9 +2,12 @@
   .Chat-main__header
     .Chat-main__header__top-contents
       .Chat-main__header__top-contents__group-name
-        グループ名
+        = @group.name
       .Chat-main__header__top-contents__member-name
-        Member : メンバー名
+        Member : 
+        - @group.users.each do |user|
+          = user.name
+
     .Chat-main__header__bottom-contents
       =link_to("#", class: "group-info__edit-btn") do
         Edit
