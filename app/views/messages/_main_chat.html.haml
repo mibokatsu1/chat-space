@@ -38,10 +38,10 @@
     .Chat-main__body__message
       おはよう！
   .Chat-main__footer
-    %form.Chat-main__footer__form
+    = form_with model: [@group, @message], html: {class: "Chat-main__footer__form"}, local: true do |f|
       .Chat-main__footer__form__input
-        %input.Chat-main__footer__form__input__text{"placeholder": "type a message", type: "text"}
-        %label{class: "input-box__image"}
-          = icon('far', 'image', class: "input-box__icon")
-          %input.input-box__file{type: "file"}
-      %input.Chat-main__footer__form__send-btn{name: "commit", type: "submit", value: "Send"}
+        = f.text_field :content, class: 'Chat-main__footer__form__input__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('far', 'image', class: 'input-box__icon')
+          = f.file_field :image, class: 'input-box__file'
+      = f.submit 'Send', class: 'Chat-main__footer__form__send-btn'
