@@ -128,24 +128,8 @@
     height: calc(100vh - 190px);
     padding: 35px 40px 0;
     background-color: #fafafa;
-    &__message-user {
-      @extend.Chat-main__body__message-user;
-    }
-    &__message {
-      @extend.Chat-main__body__message;
-    }
-    &__message-user {
-      @extend.Chat-main__body__message-user;
-    }
-    &__message {
-      @extend.Chat-main__body__message;
-    }
-    &__message-user {
-      @extend.Chat-main__body__message-user;
-    }
-    &__message {
-      @extend.Chat-main__body__message;
-    }
+    box-sizing: border-box;
+    overflow: scroll;
     &__message-user {
       @extend.Chat-main__body__message-user;
     }
