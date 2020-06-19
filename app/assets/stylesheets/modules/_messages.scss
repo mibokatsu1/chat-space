@@ -66,6 +66,7 @@
         display: flex;
         list-style: none;
         .side-box__icon {
+          font-size: 16px;
           color: #ffffff;
         }
         &--edit {
@@ -145,23 +146,22 @@
       display: flex;
       align-items: center;  
       &__input {
-        display: flex;
-        align-items: center;
-        position: relative;
         width: 100%;
-        height: 50px;
-        padding: 10px 10px;
-        border: none;
+        position: relative;
         background-color: #fff;
         &__text {
           width: 100%;
+          height: 50px;
+          padding: 0 45px 0 15px;
           border-style: none;
         }
         .input-box__image {
+          height: 50px;
           position: absolute;
           right: 10px;
           .input-box__icon {
             font-size: 25px;
+            line-height: 50px;
           }
           .input-box__file {
             display: none;
