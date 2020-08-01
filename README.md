@@ -1,18 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ名
+チャットスペース
 
-Things you may want to cover:
+## 概要
+テックキャンプのカリキュラムで作成したチャットアプリです。
 
-* Ruby version
+## 機能
+- ユーザー登録
+- チャットグループ登録/編集
+- メッセージ送信
+- メッセージのインクリメンタルサーチ
+- メッセージの自動更新(非同期通信)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
+## DB設計
 ## groups_usersテーブル
 
 |Column|Type|Options|
